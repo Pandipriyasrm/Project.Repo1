@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Online Movie Ticket Booking</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <h1>🎬 Online Movie Ticket Booking</h1>
+
+  <!-- Movie Selection -->
+  <div class="movie-container">
+    <label>Select a movie:</label>
+    <select id="movie">
+      <option value="200">Avengers: Endgame (₹200)</option>
+      <option value="150">Spider-Man: No Way Home (₹150)</option>
+      <option value="180">Batman (₹180)</option>
+    </select>
+  </div>
+
+  <!-- Seat Layout -->
+  <ul class="showcase">
+    <li><div class="seat"></div><small>Available</small></li>
+    <li><div class="seat selected"></div><small>Selected</small></li>
+    <li><div class="seat occupied"></div><small>Occupied</small></li>
+  </ul>
+
+  <div class="container">
+    <div class="screen"></div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+    </div>
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+  </div>
+
+  <!-- Booking Summary -->
+  <p class="text">
+    You have selected <span id="count">0</span> seats for a price of ₹<span id="total">0</span>
+  </p>
+
+  <button id="confirm">Confirm Booking</button>
+
+  <div id="confirmation"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
